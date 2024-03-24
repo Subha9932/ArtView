@@ -1,0 +1,46 @@
+<!-- imgslide.hbs -->
+
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- index.hbs -->
+
+{{> Imgslide}}
+
+  <ol class="carousel-indicators">
+    {{#each images as |img index|}}
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to={{index}}
+        class="{{if (eq index activeIndex) 'active'}}"
+      ></li>
+    {{/each}}
+  </ol>
+  <div class="carousel-inner">
+    {{#each images as |img index|}}
+      <div class="carousel-item {{if (eq index activeIndex) 'active'}}">
+        <img class="d-block w-100 carousel-image" src="{{img}}" alt="Slide {{index}}">
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<style>
+  /* Add your internal CSS styles here */
+  /* Add your styles for the carousel and its items */
+  .carousel {
+    /* Add your styles */
+  }
+
+  .carousel-indicators {
+    /* Add your styles */
+  }
+
+  .carousel-item {
+    /* Add your styles */
+  }
+
+  .carousel-image {
+    /* Add your styles */
+  }
+</style>

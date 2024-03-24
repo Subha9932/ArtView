@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.15.5",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "bootstrap5": "^1.1.9",
+    "connect-mongodb-session": "^4.0.0",
+    "express": "^4.18.2",
+    "express-react-views": "^0.11.0",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.1.0",
+    "netlify-cli": "^17.15.1",
+    "nodemon": "^3.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^6.22.3",
+    "winston": "^3.11.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo 'Nothing to build for the backend server.'",
+    "netlify": "netlify"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.1",
+    "@babel/preset-react": "^7.24.1"
+  }
+}
